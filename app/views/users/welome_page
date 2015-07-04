@@ -1,0 +1,8 @@
+<h1> Welcome to Chitter! </h1>
+
+<div>
+ Not already a Chitter user? Click here to register:
+
+<form action ='/users/sign_up'>
+  <input type='button' value="Sign up">
+</form>
