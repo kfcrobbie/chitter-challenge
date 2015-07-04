@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'sinatra'
 
 feature 'User sign up' do
   scenario 'I am greeted with a welcome page' do
