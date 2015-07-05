@@ -21,9 +21,14 @@ class Chitter < Sinatra::Base
     @user = User.create(username: params[:username], name: params[:name], email: params[:email], password: params[:password])
     if @user.save
       session[:user_id] = @user_id
-      erb :'users/new'
+      redirect to('/logged_in')
     else flash[:errors] = @user.errors.full_messages
-      redirect '/sign_up'
+      erb :'/users/sign_up'
     end
+  end
+
+  get '/logged_in' do
+    @user
+    erb :'/users/logged_in'
   end
 end
