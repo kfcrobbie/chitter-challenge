@@ -175,3 +175,6 @@ DEPENDENCIES
   rubocop-rspec
   sinatra
   sinatra-flash
+
+BUNDLED WITH
+   1.10.4

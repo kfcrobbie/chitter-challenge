@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.2.1'
 
 
 
 
-group :test do
+# group :test do
   gem 'rspec'
   gem 'cucumber'
   gem 'rubocop-rspec'
@@ -13,11 +13,11 @@ group :test do
   gem 'capybara'
   gem 'sinatra'
   gem 'data_mapper'
-  gem "dm-postgres-adapter"
-  gem "database_cleaner"
+  gem 'dm-postgres-adapter'
+  gem 'database_cleaner'
   gem 'bcrypt'
   gem 'sinatra-flash'
   gem 'byebug'
   gem 'coveralls', require: false
-end
+
 
